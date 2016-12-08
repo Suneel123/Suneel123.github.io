@@ -20,6 +20,9 @@ a:hover {
     text-decoration: underline;
     color: #D84F4F;
 }
+.img-circle{
+	border-radius: 50%;
+}
 h1 {
     font-size: 3em;
     font-family: "Garamond Premier Pro", garamond-premier-pro, "Adobe Caslon Pro", "Minion Pro", Constantia, serif;
