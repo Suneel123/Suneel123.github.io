@@ -1,34 +1,44 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# top level stuff you probably don't need to touch
+highlighter: pygments
+markdown: rdiscount
+rdiscount:
+  extensions: [smart]
+permalink: /:title.html
+paginate: 5
+gems: [jekyll-paginate]
+port: 3000
+safe: true
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
 
-# Build settings
-markdown: kramdown
-theme: minima
-gems:
-  - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
+# edit here to achieve your personal greatness
+url: http://suneel123.github.io/
+baseurl: 
+title: Suneel Dondapati
+name: Suneel Dondapati
+author: Suneel Dondapati
+description: Personal blog and resume
+website: Suneel23.github.io
+website_full: https://Suneel123.github.io/
+avatar: profile.png
+email: dsuneel1@gmail.com
+email_full: mailto:dsuneel@gmail.com
+github: Suneel123/Suneel123.github.io # username
+twitter: SuneelChowda
+linkedin: suneel-dondapati-54161980
+stackoverflow: users/7276694/suneel-d  #e.g: users/2735833/proton1h1
+researchgate: Suneel_Dondapati3
+tel: +91 9491993516
+tel_full: tel:+919491993516
+google_maps: 'https://goo.gl/maps/S4x6s6kSYGJ2'
+address: 6-1173/A, Kodada Road
+address1: Near Bank Of India
+city: Jaggayyapet
+postcode: 521175
+country: India
+#Comment out if you don't want disqus 
+disqus: suneeld
+google_analytics: UA-88757760-1
+
+
+# needed for travis-ci build
+exclude: [vendor]
