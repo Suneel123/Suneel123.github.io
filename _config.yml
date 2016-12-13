@@ -1,4 +1,5 @@
-# top level stuff you probably don't need to touch
+# top level stuff you probably don't need to touch, it describes defaults supported
+
 highlighter: rouge
 markdown: kramdown
 rdiscount:
