@@ -18,7 +18,7 @@ title: Suneel Dondapati
                                 </div>
                             </p>
                             <address class="resumebio">
-                                <a href="{{ site.google_maps }}">
+                                <a href="{{ site.google_maps }}" target="_blank">
                                      {{ site.address }}<br/>
                                      {{ site.address1 }}<br/>
                                      {{ site.city }}-{{ site.postcode }}<br/>
@@ -27,14 +27,18 @@ title: Suneel Dondapati
                             </address>
                             <p>
                                 <div style="text-align: right">
-                                    <a href="{{ site.website_full }}">{{ site.website }}</a><br/>
+                                    <a href="{{ site.website_full }}" target="_blank">{{ site.website }}</a><br/>
                                 </div>
                             </p>
                             <p align="right">
                                 <a href="mailto:{{ site.email_full }}">{{ site.email }}</a><br/>
-                                <a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i> Github</a> /
-                                <a href="https://linkedin.com/in/{{ site.linkedin }}"><i class="fa fa-linkedin"></i> Linkedin</a>
+                                <a href="https://github.com/{{ site.github }}" target="_blank"><i class="fa fa-github"></i> Github</a> /
+                                <a href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i> Linkedin</a>
                             </p>
+                            <br/>
+                            <br/>
+                            <br>
+                           <a href="{{ site.baseurl }}/assets/Suneel_Dondapati_cv.pdf" target="_blank"><img src="{{ site.baseurl }}static/img/pdf.png" alt="Resume Pdf" align="right" width="50" height="50"></a>
             </div>
 				 
             <div class="col-sm-9 col-md-9 col-lg-9">
@@ -44,18 +48,18 @@ title: Suneel Dondapati
 
                             {% include industrial_exposure.html %}
 
-                             {% include academic_projects.html %}
+                            {% include academic_projects.html %}
+                             
+                            {% include publications.html %}
 
                             {% include skills.html %}
+                            
+                            {% include achievements.html %}
 
-                           
-
-                            {% include interests.html %}
+                            {% include position_of_responsibility.html %}
 				</h5>
 			</div>
 		</div>
 	</div>
   </div>
 </div>
-
-
