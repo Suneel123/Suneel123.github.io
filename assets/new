@@ -1,0 +1,67 @@
+---
+layout: layout
+title: Suneel Dondapati
+---
+
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-body">
+		<div class="row">
+			<div class="col-sm-3 col-md-3 col-lg-3">
+                <div>
+                    <img src="{{ site.baseurl }}static/img/profile.png" class="me" align="right">
+                </div><br/><br/><br/><br/><br/>
+                        <h6 style="text-align: right">Suneel<br/>Dondapati</h6>
+                            <p>
+                                <div style="text-align: right">
+                                    <a href="{{ site.tel_full }}">{{ site.tel }}</a>
+                                </div>
+                            </p>
+                            <address class="resumebio">
+                                <a href="{{ site.google_maps }}" target="_blank">
+                                     {{ site.address }}<br/>
+                                     {{ site.address1 }}<br/>
+                                     {{ site.city }}-{{ site.postcode }}<br/>
+                                     {{ site.country }}
+                                </a>
+                            </address>
+                            <p>
+                                <div style="text-align: right">
+                                    <a href="{{ site.website_full }}" target="_blank">{{ site.website }}</a><br/>
+                                </div>
+                            </p>
+                            <p align="right">
+                                <a href="mailto:{{ site.email_full }}">{{ site.email }}</a><br/>
+                                <a href="https://github.com/{{ site.github }}" target="_blank"><i class="fa fa-github"></i> Github</a> /
+                                <a href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i> Linkedin</a>
+                            </p>
+                            <br/>
+                            <br/>
+                            <br>
+                           <a href="{{ site.baseurl }}/assets/Suneel_Dondapati_cv.pdf" target="_blank"><img src="{{ site.baseurl }}static/img/pdf.png" alt="Resume Pdf" align="right" width="50" height="50"></a>
+            </div>
+				 
+            <div class="col-sm-9 col-md-9 col-lg-9">
+			    <h5 style="text-align: left">
+
+                            {% include education.html %}
+
+                            {% include industrial_exposure.html %}
+
+                            {% include academic_projects.html %}
+                             
+                            {% include publications.html %}
+
+                            {% include skills.html %}
+                            
+                            {% include achievements.html %}
+
+                            {% include position_of_responsibility.html %}
+				</h5>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+
+
