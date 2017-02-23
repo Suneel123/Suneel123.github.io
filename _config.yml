@@ -1,5 +1,4 @@
-# top level stuff you probably don't need to touch, it describes defaults supported
-
+# top level stuff you probably don't need to touch
 highlighter: rouge
 markdown: kramdown
 rdiscount:
@@ -18,12 +17,12 @@ title: Suneel Dondapati
 name: Suneel Dondapati
 author: Suneel Dondapati
 description: Personal blog and resume
-website: Suneel23.github.io
+website: Suneel123.github.io
 website_full: https://Suneel123.github.io/
 avatar: profile.png
 email: dsuneel1@gmail.com
 email_full: mailto:dsuneel@gmail.com
-github: Suneel123/Suneel123.github.io # username
+github: Suneel123 # username
 twitter: SuneelChowda
 linkedin: suneel-dondapati-54161980
 stackoverflow: users/7276694/suneel-d  #e.g: users/2735833/proton1h1
