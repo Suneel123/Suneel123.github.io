@@ -2,25 +2,35 @@
 layout: layout
 title: Blog
 ---
-
 <div class="container">
-<h3>Archive</h3>
-  <div class="panel panel-default">
-    <div class="panel-body">
+		<div class="row">
 		{% for post in site.posts %}
-			<div class="row">
-				 <div class="col-sm-4 col-md-4 col-lg-4">
-					 <h5 style="text-align: right">
-					 	{{ post.date | date: "%B %e, %Y" }}
-					 </h5>
-				 </div>
-				 <div class="col-sm-8 col-md-8 col-lg-8">
-					 <h5 style="text-align: left">
-					 	<strong><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></strong>
-					 </h5>
-				 </div>
+			<div class="container-fluid">	
+					{% assign remainder =  post.num | modulo: 3  %}
+						<div class="col-sm-4 col-md-4">
+							{% if remainder == 0 %}
+							<div class="panel panel-info">
+								<div class="panel-heading" style="font-size: 20px; text-align: center"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>
+								<div class="well well-sm" style="font-size: 16px; text-align: justify"><a href="{{ site.baseurl }}{{ post.url }}"></a>{{ post.excerpt }}
+								<a href="#" class="btn btn-primary" style="color: antiquewhite">Load More</a></div>
+							</div>
+						</div>  
+						<div class="col-sm-4 col-md-4">
+							{% elsif remainder == 2 %}
+							<div class="panel panel-info">
+								<div class="panel-heading" style="font-size: 20px; text-align: center"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>
+								<div class="well well-sm" style="font-size: 16px; text-align: justify"><a href="{{ site.baseurl }}{{ post.url }}"></a>{{ post.excerpt }}</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-4">
+							{% else %}
+							<div class="panel panel-info">
+								<div class="panel-heading" style="font-size: 20px; text-align: center"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>
+								<div class="well well-sm" style="font-size: 16px; text-align: justify"><a href="{{ site.baseurl }}{{ post.url }}"></a>{{ post.excerpt }}</div>
+							</div>
+						</div>
+						{% endif %}
 			</div>
-	    {% endfor %}
-	</div>
-  </div>
+	  {% endfor %}
+		</div>
 </div>
